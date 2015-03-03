@@ -69,15 +69,17 @@ Scaling:
   Min: 1
   Max: -1
 Endpoints:
-- Private-IP-Name: IP
-  Private-Port-Name: PORT
-  Private-Port: 8080
-  Public-Port-Name: PROXY_PORT
+- Private-IP-Name: SSL_IP
+  Private-Port-Name: SSL_PORT
+  Private-Port: 8433
+  Public-Port-Name: SSL_PROXY_PORT
   Protocols:
   - http
   - ws
-  Options:
+  - https
+  Options: 
     primary: true
+    ssl_to_gear: true
   Mappings:
   - Frontend: ''
     Backend: ''
