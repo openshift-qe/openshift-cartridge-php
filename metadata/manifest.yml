@@ -75,13 +75,12 @@ Endpoints:
   Public-Port-Name: SSL_PROXY_PORT
   Protocols:
   - http
-  - ws
   - https
   Options: 
     primary: true
-    ssl_to_gear: true
   Mappings:
   - Frontend: ''
     Backend: ''
     Options:
       websocket: true
+      ssl_to_gear: true
