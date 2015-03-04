@@ -80,7 +80,7 @@ Endpoints:
   Protocols:
   - http
   - ws
-  - https
+  - ssl
   Options:
     primary: true
   Mappings:
