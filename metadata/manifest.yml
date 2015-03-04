@@ -72,15 +72,10 @@ Endpoints:
 - Private-IP-Name: IP
   Private-Port-Name: PORT
   Private-Port: 8080
-  Piublic-Port-Name: PROXY_PORT
-- Private-IP-Name: SSL_IP
-  Private-Port-Name: SSL_PORT
-  Private-Port: 8443
-  Public-Port-Name: SSL_PROXY_PORT
+  Public-Port-Name: PROXY_PORT
   Protocols:
   - http
   - ws
-  - ssl
   Options:
     primary: true
   Mappings:
