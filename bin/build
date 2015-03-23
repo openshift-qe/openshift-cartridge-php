@@ -1,0 +1,3 @@
+#!/bin/bash -eu
+
+date > ${OPENSHIFT_DATA_DIR}/$key
